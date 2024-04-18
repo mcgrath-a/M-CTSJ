@@ -1,0 +1,237 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta name="viewport" content="width=device-width, initial-scale=0.8">
+    <title>Welcome</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://www.w3schools.com/w3css/4/w3.css">
+    <style>  @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+    </style>
+    <style>
+        p {
+    margin-top: 0;
+    margin-bottom: 1em;
+}
+ .centered-list {
+            display: flex;
+            justify-content: center;
+            align-items: center;
+           
+        }
+
+/* Center the list and remove list-style */
+.centered-list ul {
+    list-style: none;
+    text-align: center;
+    padding-left: 0;
+}
+
+/* Add custom bullet points */
+.centered-list li:before {
+    content: "• ";
+}
+
+.mySlides {
+    display: none;
+  border: 3px solid #ccc;
+  /* Set fixed width and height for the images */
+  width: 800px;
+  height: 450px;
+  object-fit:cover; 
+    
+}
+.caption {
+  background-color: white;
+  color: black;
+  padding: 5px;
+  position: absolute;
+  bottom: 0px;
+  left: 0;
+  width: 100%;
+}
+
+    </style>
+</head>
+<body>
+
+
+<!-- Landing page -->
+<div class="container_wrapper"> 
+    <a href= "index.html" >
+        <img src= "images/black-home.png" style="top:auto; width:35; height:35px; padding:7px" >
+    </a>
+    <div class="container_inner">
+        <h1 class="page-title" style="text-align: center;"> <b>Welcome: Background & Artist Vision</b></h1>
+       
+        <p style = "font-family:'Poppins', sans-serif;font-size:20px;">
+            Welcome to my final project for <i>HIST 122: Rise, Fall, and Rebirth: Europe Since the Enlightenment</i>, 
+            Spring Semester 2023. I'm excited to introduce you to this interactive learning experience, where you'll 
+            explore key events and themes from our course. <br>**The underlined sections below will navigate you to that part of the page.
+        </p>
+       
+    <p>
+    <div class="centered-list">
+        <ul style = "font-family:'Poppins',sans-serif;font-size:20px;font-style:italic;">
+            <li><a href="#section1">Project Description </a></li>
+            <li><a href="#section2">Who and why </a></li>
+            <li><a href="#section3">User flow and navigation guidance</a></li>
+            <li><a href="#section4">Final thoughts and personal takeaways</a></li>
+        </ul>
+    </div>
+    </p>
+
+    <h2 id="section1">Project Description </h2>
+        <p style = "font-family:'Poppins', sans-serif;font-size:20px;">
+        My project is an interactive timeline, designed as a web-based application, focusing on 
+        Unit 4: Europe and the World at War, covering events related to World War II and the Holocaust. 
+        The inspiration for this project comes from our exploration of themes throughout HIST 122, such 
+        as the rise of fascism, racism and antisemitism, the Nuremberg Laws, and the impact of black soldiers 
+        in World War II. In addition to Unit 4, the timeline addresses the theme of "Silencing the Past," 
+        demonstrating how false narratives continue to shape history and emphasizing the importance of dismantling 
+        these misconceptions.The timeline will feature images, excerpts from course materials, and a unique analysis 
+        of the events and informed opinions based on our discussions in class.  
+        <br>
+        </p>
+    <p style = "font-family:'Poppins', sans-serif;font-size:20px;">
+        This website has over 1,600 lines of code, using programming languages such as HTML, CSS, and JavaScript. It is tailored to fit my creative vision, 
+        using programming resources like Stack Overflow, Google, and ChatGPT as needed for advanced tech support. The code files and resources will be 
+        available for viewing on my GitHub portfolio <a href="https://github.com/mcgrath-a/HIST122FinalProject" > click here</a>. GitHub is a web-based platform that facilitates version 
+        control and collaboration, allowing users to manage and store revisions of their projects, including code files, 
+        and share them with others. I hope that not only is my engagement with the 
+        course material evident but you (the audience) are immersed in the website as I have spent many 
+        hours making it tailored to my liking :)
+        <br>
+        <br>
+        </p>
+
+    <h2 id="section2">Who and why </h2>
+
+        <p style = "font-family:'Poppins', sans-serif;font-size:20px;">
+            The project aims to connect course themes, discussions, and methodology while offering a unique analysis of events based on our class discussions.
+            By creating this interactive learning experience, I hope to provide students, educators, history enthusiasts, and individuals with a tool that allows 
+            them to delve deeper into these historical events and gain a greater understanding of the complexities surrounding World War II and the Holocaust. 
+            Through the use of True or False questions, my project aims to debunk common misconceptions and reveal the truth behind these pivotal moments in history, 
+            highlighting the connections between course themes and showcasing the importance of accurate historical representation.
+          
+        </p>
+        <br>
+        <br>
+      
+    
+    <h2 id="section3">User flow and navigation guidance</h2>
+    
+
+    <div class="w3-content" style="max-width:800px; position:relative;">
+        <div class="mySlides">
+          <img src="images/welcome-slideshow/question.png" style="width:100%">
+          <div class="caption">Each event will have a True or False question before it that <b>must be answered</b> 
+            to reval the information  below it. Using your previous knowledge or your best educated guess click an option
+            to reval the answer !</div>
+        </div>
+        <div class="mySlides">
+            <img src="images/welcome-slideshow/correct-answers.png" style="width:100%">
+            <div class="caption">At the top of the page is a correct answer count that will tally the number of 
+                correct answers you have for the 10 events. Choose wisely because you cannot go back and change your answer!</div>
+          </div>
+        <div class="mySlides">
+          <img src="images/welcome-slideshow/full-question2.png" style="width:100%">
+          <div class="caption">Once the T or F question is answered the information about the event will be revealed, 
+            describing the event and elaborating on the question's contexts.</div>
+        </div>
+        <div class="mySlides">
+            <img src="images/welcome-slideshow/readmore.png" style="width:100%">
+            <div class="caption">Towards the end of the text, there is a purple ‘Read More’ button that when pressed opens a ‘pop-up’ 
+                with more detailed information and primary or secondary sources about the event.</div>
+          </div>
+        <div class="mySlides">
+            <img src="images/welcome-slideshow/readmore-modal.png" style="width:100%">
+            <div class="caption">The ‘Read More’ pop-up contains 4 sections, 1) the image(s) that relate to the event, 2) the elaboration 
+                and more analysis of the event, 3) the editor's opinion, in other words, how I (the creator) of this website) feel about 
+                the event and how it relates to the course and society, and 4) the sources.</div>
+          </div>
+          <div class="mySlides">
+            <img src="images/welcome-slideshow/hover-zoom.png" style="width: 793px;
+            height: 440px;">
+            <div class="caption">Hovering over of the image for a few seconds will do 2 things 1)<b>enlarge</b> the image to zoom in, and 2)reveal a tool-tip that shows a 
+                brief <b>caption and/or description </b>of the image that relates to that event.
+            </div>
+          </div>
+        <div class="mySlides">
+            <img src="images/welcome-slideshow/sources.png" style="width:100%">
+            <div class="caption">The sources for the analysis of that particular event can be accessed by hovering and 
+                clicking on the sources drop-down, or also by going to the ‘Works Cited’ page which can be accessed on the home page.
+            </div>
+          </div>
+        <div class="mySlides">
+            <img src="images/welcome-slideshow/final-pop-up.png" style="width:100%">
+            <div class="caption">Finally, once answering all 10 of the T or F questions, you will be met with a nice 
+                surprise at the end. Have fun scrolling through history! </div>
+          </div>
+       
+      </div>
+      
+      <div class="w3-center">
+        <div class="w3-section">
+            <button class="w3-button w3-light-grey" onclick="plusDivs(-1)" >❮ Prev</button>
+          <button class="w3-button w3-light-grey" onclick="plusDivs(1)">Next ❯</button>
+        </div>
+        <button class="w3-button demo" onclick="currentDiv(1)" style="background-color: #9d9c9f;">1</button>
+        <button class="w3-button demo" onclick="currentDiv(2)" style="background-color: #9d9c9f;">2</button> 
+        <button class="w3-button demo" onclick="currentDiv(3)" style="background-color: #9d9c9f;">3</button>  
+        <button class="w3-button demo" onclick="currentDiv(4)" style="background-color: #9d9c9f;">4</button>  
+        <button class="w3-button demo" onclick="currentDiv(5)" style="background-color: #9d9c9f;">5</button>
+        <button class="w3-button demo" onclick="currentDiv(6)" style="background-color: #9d9c9f;">6</button> 
+        <button class="w3-button demo" onclick="currentDiv(7)" style="background-color: #9d9c9f;">7</button>
+        <button class="w3-button demo" onclick="currentDiv(8)" style="background-color: #9d9c9f;">8</button>   
+      </div>
+
+          <br>
+          <br>
+          <h2 id="section4">Final Thoughts and Personal Takeaways:</h2>
+
+          <p style = "font-family:'Poppins', sans-serif;font-size:20px;">
+            Creating this project was a fun and educational experience. I enjoyed researching and diving deeper into specific 
+            events, analyzing them based on our class discussions and lectures. As a Computer Science major, I found it rewarding 
+            to apply my programming skills to a historical context, bringing these important events to life in an interactive and 
+            engaging way. I hope you enjoy exploring this timeline as much as I enjoyed creating it!
+          <br>
+          <br>
+          <br>
+          </p>
+        </div>
+
+    
+    
+</div>
+    
+</body>
+
+<script>
+    var slideIndex = 1;
+    showDivs(slideIndex);
+    
+    function plusDivs(n) {
+      showDivs(slideIndex += n);
+    }
+    
+    function currentDiv(n) {
+      showDivs(slideIndex = n);
+    }
+    
+    function showDivs(n) {
+      var i;
+      var x = document.getElementsByClassName("mySlides");
+      var dots = document.getElementsByClassName("demo");
+      if (n > x.length) {slideIndex = 1}    
+      if (n < 1) {slideIndex = x.length}
+      for (i = 0; i < x.length; i++) {
+        x[i].style.display = "none";  
+      }
+      for (i = 0; i < dots.length; i++) {
+        dots[i].className = dots[i].className.replace(" w3-blue", "");
+      }
+      x[slideIndex-1].style.display = "block";  
+      dots[slideIndex-1].className += " w3-blue";
+    }
+    </script>
+</html>

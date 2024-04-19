@@ -6,7 +6,9 @@
 }
 
 body {
-  background: #2e364a; 
+  /* background: #2e364a;  */
+  background-image: linear-gradient(rgb(76, 0, 255), rgb(206, 223, 25), rgb(238, 39, 231));
+
 
 }
 
@@ -14,8 +16,8 @@ body {
   position: relative;
   margin: 75px auto;
   max-width: 1150px;
-  background: #8891a9;
-  border: 2px solid #3d3d3d;
+  background: rgba(228, 153, 153, 0.4); /* 50% transparency */
+  border: 2px solid white;
   border-radius: 20px;
 }
 

@@ -149,6 +149,33 @@ img {vertical-align: middle;}
             visibility: visible;
             opacity: 1;
         }
+
+        .button {
+  border: none;
+  color: white;
+  padding: 8px 16px;
+  text-align: center;
+  text-decoration: none;
+  display: inline-block;
+  font-size: 16px;
+  margin: 4px 2px;
+  transition-duration: 0.4s;
+  cursor: pointer;
+}
+
+.button2 {
+   background-color: rgb(227, 92, 164);  
+
+
+  color: black; 
+  border: 2px solid white;
+}
+
+.button2:hover {
+  /* background-color: #008CBA; */
+  background-image: linear-gradient(to right, rgb(110, 81, 241) , rgb(123, 226, 202));
+  color: white;
+}
     </style>
 </head>
 <body>
@@ -158,19 +185,21 @@ img {vertical-align: middle;}
 <div class="container_wrapper"> 
   <div class="container_inner">
     <ul class="home__menu">
-        <h1 class="page-title" style="text-align: center;"> <b>Scenario Quiz: Let's change the world one (Microfeminism) step at a time! </b></h1>
-      <li class="tooltip">
+        <h1 class="page-title" style="text-align: center;"> <b>Scenario Quiz: Let's change the world one (Microfeminism) step at a time! </b></h1> 
+        <p>Created by: Alyanna McGrath </p>
+      <button class="button button2">  <li class="tooltip">
         <a class="nav-link" href="./welcome.html">Welcome</a>
-        <span class="tooltiptext">Welcome Page</span>
-      </li>
-      <li class="tooltip">
+        
+      </li> </button>
+      <button class="button button2">  <li class="tooltip">
         <a class="nav-link" href="./timeline.html">Play Game</a>
-        <span class="tooltiptext">Play Game </span>
-      </li>
-      <li class="tooltip">
+       
+      </li> </button>
+      <button class="button button2">  <li class="tooltip">
         <a class="nav-link" href="./works.html">Works Cited</a>
-        <span class="tooltiptext">Works Cited Page</span>
-      </li>  
+       
+      </li> </button>
+    
     </ul>
 
     <br>
@@ -198,7 +227,6 @@ img {vertical-align: middle;}
       <div class="caption">From "Feminist memes: should we share them?", January 26, 2017</div>
     </div>
     
-    
 
     
 <a class="prev" onclick="plusSlides(-1)">❮</a>
@@ -220,7 +248,8 @@ img {vertical-align: middle;}
       
       
     </div>
-  
+
+
 </div>
     
     <script>
@@ -251,5 +280,7 @@ img {vertical-align: middle;}
       dots[slideIndex-1].className += " active";
     }
     </script>
+
+
 </body>
 </html>

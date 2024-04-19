@@ -16,7 +16,7 @@ body {
   position: relative;
   margin: 75px auto;
   max-width: 1150px;
-  background: rgba(228, 153, 153, 0.4); /* 50% transparency */
+  background: rgba(133, 157, 236, 0.3); /* 50% transparency */
   border: 2px solid white;
   border-radius: 20px;
 }

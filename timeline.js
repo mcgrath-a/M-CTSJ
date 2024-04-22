@@ -36,9 +36,10 @@ function checkAnswer(answer, correctAnswer, index) {
     document.getElementById('timeline-text-' + index).style.display = 'block';
     correctAnswers++;
     document.getElementById('correct-answers').innerText = correctAnswers;
-    document.getElementById('feedback-' + index).innerHTML = "Correct!  &#9989";
+    document.getElementById('feedback-' + index).innerHTML = '<span style="color: #90EE90;">Correct!  &#9989</span>';
+
   } else {
-    document.getElementById('feedback-' + index).innerHTML = "Incorrect ! &#10060";
+    document.getElementById('feedback-' + index).innerHTML = '<span style="color: red;">Incorrect ! &#10060';
     document.getElementById('timeline-text-' + index).style.display = 'block';
   }
   
@@ -46,10 +47,10 @@ function checkAnswer(answer, correctAnswer, index) {
   console.log(totalAnswers)
 
   //have to change to 10 once finsihed 
-  if (totalAnswers === 10) {
+  if (totalAnswers === 5) {
     setTimeout(function (){
         showResultsPopup();
-    },4000);
+    },3000);
    
   }
 }
@@ -156,7 +157,7 @@ async function showResultsPopup() {
     message.style.fontSize = "24px";
     message.style.fontWeight = "bold";
     message.style.marginBottom = "20px";
-    message.innerHTML = "Congratulations! You have completed the timeline.";
+    message.innerHTML = "Congratulations! You have completed the game.";
     popup.appendChild(message);
   
     // Add a description based on the user's performance
@@ -164,11 +165,11 @@ async function showResultsPopup() {
     description.style.fontSize = "18px";
     description.style.marginBottom = "20px";
     if (correctAnswers === totalAnswers) {
-      description.innerHTML = "You scored " + correctAnswers + " out of 10. Wow, you know your stuff! Are you a historian?";
+      description.innerHTML = "You scored " + correctAnswers + " out of 5. Wow, you know your stuff! Keep practicing microfeminism in your everyday life!";
     } else if (correctAnswers > totalAnswers / 2) {
-      description.innerHTML = "You scored " + correctAnswers + " out of 10. Impressive! You've answered more than half of the questions correctly. Keep exploring history!";
+      description.innerHTML = "You scored " + correctAnswers + " out of 5. Impressive! You've answered more than half of the questions correctly. Keep practicing microfeminism in your everyday life!";
     } else {
-      description.innerHTML = "You scored " + correctAnswers + " out of 10. Don't worry, history is a vast subject. Keep learning and try again!";
+      description.innerHTML = "You scored " + correctAnswers + " out of 5. Don't worry, microfeminism is a vast subject. Keep learning and try again!";
     }
     
     popup.appendChild(description);

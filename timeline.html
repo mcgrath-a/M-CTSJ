@@ -14,7 +14,7 @@
         font-family: 'Poppins', sans-serif;
       }
       .timeline-section{
-        background-color: #24292d;
+        background: rgba(133, 157, 236, 0.3); /* 50% transparency */
         min-height: 100vh;
         padding: 100px 15px;
       }
@@ -30,7 +30,7 @@
         position: absolute;
         width: 2px;
         height: 100%;
-        background-color: #2f363e;
+        background-color: #3e362f;
         left: calc(50% - 1px);
       }
       .timeline-item{
@@ -51,7 +51,7 @@
       .timeline-dot{
         height: 16px;
         width: 16px;
-        background-color: #eaa023;
+        background-color: white;
         position: absolute;
         left: calc(50% - 8px);
         border-radius: 50%;
@@ -63,12 +63,12 @@
         margin:6px 0 15px;
       }
       .timeline-content{
-          background-color: #2f363e;
+          background-color: rgb(48, 47, 47,0.3);
         padding: 30px;
         border-radius: 5px;
       }
       .timeline-content h3{
-          font-size: 18px;
+          font-size: large;
         color: #ffffff;
         margin:0 0 10px;
         text-transform: capitalize;
@@ -77,7 +77,7 @@
        
       }
       .timeline-content p{
-          color: #c8c8c8;
+          color: white;
         font-size: 16px;
         font-weight: 300;
         line-height: 22px;
@@ -123,11 +123,11 @@
     background-color: rgba(0, 0, 0, 0.4);
 }
 .modal-content {
-    background-color: #2f363e;
+    background-color: rgb(124, 114, 124);;
     margin: 15% auto;
     padding: 20px;
     border: 1px solid #888;
-    width: 80%;
+    width: 60%;
     position: relative;
     text-align: left;
 }
@@ -200,8 +200,13 @@
   .timeline-dot{
     left:0;
   }
+}
+.centered-and-large {
+            text-align: center;
+            font-size: 24px; /* You can adjust the size as needed */
+            color: white;
+        }
 
-      }
     </style>
 </head>
 <body>
@@ -215,28 +220,33 @@
         <span>Correct Answers: </span><span id="correct-answers">0</span>
       </div>      
 
+      <p class="centered-and-large">Microfeminism Game &#128540</p>
     
 
  <section class="timeline-section">
 	<div class="timeline-items">
 
-     <!-- QUESTION 1: ANSWER= FALSE-->
+     <!-- QUESTION 1: ANSWER= OPTION B-->
 		<div class="timeline-item">
 			<div class="timeline-dot"></div>
-			<div class="timeline-date">1922</div>
+
       <div class="quiz">
-        <p> <b>Statement 1: </b>Mussolini's rise to power in Italy and his structure of fascism did not influence the rise of Nazism in Germany.</p>
-        <button onclick="checkAnswer('true', 'false', 1)" style="background-color: green; color: white;">True</button>
-        <button onclick="checkAnswer('true', 'true', 1)" style="background-color: red; color: white;">False</button>
+        <p> <b>Scenario #1: </b>As a new executive Customer success hire at Beyonce Beyhive Inc., you are assigned to review email chains and send a status update to the project supervisors. You notice that although both supervisors have the same title, “Supervising Manager,” the male supervisor is always addressed first in the email. After reviewing the email chain, you're drafting an email on your team's behalf, including that of both supervisors. Who do you list first in the email signature?</p>
+        <br>
+        <button onclick="checkAnswer('true', 'false', 1)" style="background-color: rgb(18, 159, 149); color: white;"> <b>Option A: </b>List the male supervisor's name first because the previous emails did that, and it makes sense to follow that tradition
+        </button>
+        <button onclick="checkAnswer('true', 'true', 1)" style="background-color: rgb(219, 62, 204); color: white;"><b>Option B:</b> List the female supervisor's name first to challenge traditional power dynamics.
+        </button>
         <span id="feedback-1" class="correct-incorrect"></span>
       </div>
 			<div class="timeline-content" id="timeline-text-1" style="display: none;">
-        <h3>Mussolini's rise to power - Fascism in Italy influences Nazism in Germany</h3>
+        <h3><b>Feedback on Email Name order Scenario</b></h3>
         <p class="noselect">
-          The statement is false. Mussolini's rise to power and his conception of fascism 
-          did have an impact on the rise of Nazism in Germany. Mussolini’s conception of fascism 
-          laid the groundwork for similar ideologies, such as Nazism, which shared several core 
-          tenets, including nationalism, totalitarianism, and anti-democratic ideals.
+          Option A, while the typically approached action, reinforces traditional power structures. 
+          By positioning a woman assistant’s name first, you are not just altering a list; you are contesting 
+          the subtle reinforcements of male authority and challenging the broader societal endorsement of 
+          hegemonic masculinity. And if someone were to notice the change in the order of names and proceed 
+          to question it, flip the table and ask them, “what does it matter?”
 
         </p>
         <button class="read-more" id="info-btn-1" style="background-color: purple; color: white;">Read More</button>
@@ -246,46 +256,35 @@
             <span class="close">&times;</span>
             <br>
             <div class="clearfix">
-              <img class="modal-image zoom-on-hover" src="images/event-images/H-M.png" alt="Pineapple" 
-              title="Hitler & Mussolini greet each other for the first time in Venice" width="400" height="539" padding="8px">
+          
          
             <p class = "noselect" style="color: white; font-size: 18px;"> 
             <b> More information </b>
             <br>
             <br>
-            Mussolini's conception/definition of fascism, as described in "The Nationalism Reader," provided a 
-            new framework for the political landscape in Europe. He wrote, <i>"Fascism is action, and it is thought; 
-            action in which doctrine is immanent, and doctrine arising from a given system of historical forces in
-             which it is inserted and working on them from within"</i> (Mussolini qtd. in Dahbour and Ishay 199). 
+            By placing the woman supervisor's name before her boss, you engage in what Sara Ahmed calls a "Feminist Killjoy." 
+            In her book, The Feminist Killjoy: The Radical Potential of Getting in the Way (2023), Ahmed argues that such small acts 
+            can disrupt traditional power dynamics and challenge the entrenched patriarchal structures in our society. 
+            Ahmed writes, <i>"More than ever, we need to 'get in the way,' to speak up and speak back, and to be inconvenient" </i>(Ahmed, 2023). 
+            This approach asserts women’s presence and value in spaces where they are traditionally overlooked or undervalued. By reversing the 
+            typical order of names, you symbolically elevate the visibility of those typically in the background, challenging the normative hierarchy 
+            that prioritizes men in high positions. Additionally, incorporating the concept of hegemonic masculinity, which explains the social 
+            mechanisms that reinforce men's dominance over women (or, in this case, their name before the women's) through culturally sanctioned 
+            behaviors and beliefs, can deepen the understanding of why flipping the traditional naming order in professional settings is a subversive act.
+             This concept has been pivotal in framing gender dynamics and interventions to promote gender equity, as discussed in the study on gender interventions. 
+             Ahmed’s exploration of being a "Feminist Killjoy" directly challenges these hegemonic structures by promoting actions that interrupt the social 
+             and professional norms perpetuating male dominance. In conclusion, this scenario shows how, in professional settings, illustrating how small, 
+             deliberate actions can have a significant feminist impact. 
             <br>
             <br>
-            This statement reflects the core belief of fascism as an active, spiritual, and holistic approach to 
-            governance that encompasses all aspects of life. It also included a strong emphasis on the state's 
-            importance, the suppression of individualism for the greater good, and a spiritual connection to a 
-            higher law Mussolini's ideas, which would later resonate with and influence the development of Nazism
-             in Germany.
-            <br>
-            <br>
-            <b>Editors Opinion</b>
-            <br>
-            <br>
-            During this unit, engaging with Mussolini's definition of fascism offers valuable insight into 
-            the roots of a political ideology that shaped Europe during the 20th century. Understanding 
-            the foundations of fascism and its impact on the rise of Nazism in Germany helps to contextualize 
-            the historical events leading up to World War II and the Holocaust. 
-            <br>
-            <br>
-            Moreover, by examining the political, social, and ideological factors that contributed to the
-             rise of fascism, not only by enrolling and taking this course but taking it a step further uniting society as a whole;
-            we can better comprehend the challenges societies faced during this tumultuous period and learn from history to recognize 
-             the  dangers of extremist ideologies, so history does not repeat itself.
-            <br>
+          
             <p></p>
             <button class="collapsible"><b>Sources</b></button>
             <div class="content">
-              <p class="hangingindent">Dahbour, Omar, and Micheline Ishay, editors. The Nationalism Reader. Humanity Books, 1999</p>
+              <p class="hangingindent">  Ahmed, S. (2023). The Feminist Killjoy Handbook : the radical potential of getting in the way. Seal.
+              </p>
               <br>
-              <p class="hangingindent">Hitler & Mussolini greet each other for the first time in Venice. 6/13/1934. Artstor, library-artstor-org.oxy.idm.oclc.org/asset/ARTSTOR_103_41822001751609</p>
+             
             </div>
                       
 
@@ -299,21 +298,22 @@
     <!-- QUESTION 2: ANSWER= FALSE-->
 <div class="timeline-item">
   <div class="timeline-dot"></div>
-  <div class="timeline-date">1935</div>
+
   <div class="quiz">
-    <p> <b>Statement 2: </b>The Nuremberg Laws only targeted Jews.</p>
-    <button onclick="checkAnswer('true', 'false', 2)" style="background-color: green; color: white;">True</button>
-    <button onclick="checkAnswer('true', 'true', 2)" style="background-color: red; color: white;">False</button>
+    <p> <b>Scenario #2: </b>A friend mentioned they had an appointment with a doctor. The friend continues complaining about being pricked and poked when getting yearly shots. You want to ask about what the doctor had to say. How do you refer to the doctor?</p>
+    <button onclick="checkAnswer('true', 'false', 2)" style="background-color: rgb(18, 159, 149);; color: white;"><b>Option A:</b> Ask, "What did he say?" and assume the doctor is a male, despite any context from your friend, but reliant on the fact that we assume positions such as these are excluded to men and only men</button>
+    <button onclick="checkAnswer('true', 'true', 2)" style="background-color: rgb(219, 62, 204); color:white;"><b>Option B:</b> Ask, "What did they say?" and challenge the dominant narrative 
+    </button>
     <span id="feedback-2" class="correct-incorrect"></span>
   </div>
   <div class="timeline-content" id="timeline-text-2" style="display: none;">
-    <h3>Nuremberg laws enacted
+    <h3>Feedback on Refering to a doctor 
     </h3>
     <p class = "noselect">
-      The statement is false. While Jews were the primary focus of the Nuremberg Laws, 
-      which were antisemitic and racist laws enacted in Nazi Germany, other 
-      racial minorities were also targeted by these discriminatory measures. 
-      The Nuremberg Laws thus had a far-reaching impact on the lives of many minority groups in Nazi Germany.
+      This common assumption aligns with traditional gender expectations, where professional 
+      roles are often perceived as male-dominated. By referring to the doctor without using 
+      singular gender pronouns you challenge the default male narrative. This helps reshape 
+      expectations and promotes a more inclusive view of professional roles, supporting gender equity. 
 
     </p>
     <button class="read-more" id="info-btn-2" style="background-color: purple; color: white;">Read More</button>
@@ -323,61 +323,33 @@
         <span class="close">&times;</span>
         <br>
         <div class = "clearfix">
-          <img class="modal-image zoom-on-hover" src="images/event-images/jewish-star.png" title="Wrinked jewish star" 
-          width="526" height="739" padding = "8px">
         <p class = "noselect" style="color: white; font-size: 18px;"> 
         <b> More information </b>
         <br>
         <br>
-        The Nuremberg Laws were enacted in 1935 by the Nazi regime and aimed at marginalizing Jews and other 
-        racial minorities. Both groups were subjected to "social death" due to these laws. 
-        This "social death" meant that targeted individuals were systematically excluded 
-        from participating in the social, cultural, and economic life of their communities.
-        <br>
-        <br>
-        For example, Jews were only allowed to give their babies names from a predetermined 
-        list of approved Jewish names, further isolating them from the broader society. 
-        The boycott of Jewish businesses also played a significant role in crippling 
-        their economic livelihoods and further marginalizing them. These measures contributed 
-        to the "social death" of Jews and other minorities by systematically excluding them from
-         participating in their communities' social, cultural, and economic life.
-        <br>
-        <br>
-        In the words of Robert Gellately in ‘Backing Hitler,’ <i>"The Law for the Protection of German Blood 
-        and German Honour, as it was called, outlawed new marriages between Jews and non-Jews; forbade extramarital 
-        sexual relations between them; made it illegal for Jews to employ non-Jewish women under 45 as servants;
-         and illegal for Jews to raise the German flag"</i>(Gellately 56). These measures, along with other 
-         Nuremberg Laws, aimed to establish a racial hierarchy where Jews and other racial minorities 
-         were treated as inferior.
-        <br>
-        <br>
-        In addition, Hitler initially considered a broader version of these laws that would have targeted 
-        more people of mixed race but decided against it due to public opinion. The laws enacted, 
-        however, still had a significant impact on the lives of Jews and other racial minorities.
-        <br>
-        <br>
-        <b>Editor's Opinion:</b>
-        <br>
-        <br>
-        The Nuremberg Laws were a disturbing example of how racism and antisemitism can be
-         institutionalized and treated as the ‘norm.’ I believe it's essential to learn
-          about and discuss these historical events to prevent such oppressive measures from
-           happening again. Studying the Nuremberg Laws also demonstrates the role
-            that legislation can play in shaping societal attitudes and contributing to the 
-            marginalization of certain groups. 
+        In this scenario, you directly engage with Judith Butler’s concept of gender performativity. 
+        In “ Performative Acts and Gender Constitution: An Essay in Phenomenology and Feminist Theory,” Butler articulates that gender is not an inherent identity 
+        but "the legacy of sedimented acts" that are neither "natural, cultural, nor linguistic." Essentially, Butler argues that gender is not something we are born
+         with but something we perform and construct through our behaviors and social interactions.
+        By intentionally flipping the expected gender of a doctor, you contribute to redefining these acts that form our 
+        understanding of professional roles. Butler suggests that such individual acts "do work to maintain and reproduce systems of oppression" 
+        but crucially adds that "oppression is not solely a consequence of these acts." This perspective highlights the complexity of gender dynamics, where changing deep-seated biases
+         requires not just altering individual actions but transforming the broader 
+        "hegemonic social conditions" that give rise to them. Now, you may be thinking  I am just one person!? I thought the same, too, but your decision in this scenario is an example of
+         micro-feminism that, while small, serves as a critical part of the broader effort to challenge and dismantle the systemic nature of gender oppression. This nuanced understanding 
+         stresses that while the act of NOT assuming a doctor is a man may seem minor, it is a strategic move within a larger framework aimed at altering the 
+        conditions that sustain gender biases. Butler warns that focusing solely on individual actions without addressing underlying social conditions risks only touching upon the "indirect, 
+        if not epiphenomenal, reflection of those conditions." Hence, tackling the broader social norms alongside individual behaviors is crucial to challenge and change gender biases effectively.
         <br>
         <br>
 
         <p></p>
         <button class="collapsible"><b>Sources</b></button>
         <div class="content">
-          <p class="hangingindent">Gellately, Robert. Backing Hitler : Consent and Coercion in Nazi Germany. Oxford ;: Oxford University Press, 2002. Print.</p>
+          <p class="hangingindent">Butler, J. (1988). Performative Acts and Gender Constitution: An Essay in Phenomenology and Feminist Theory. Theatre Journal, 40(4), 519–531. https://doi.org/10.2307/3207893</p>
           <br>
-          <p class="hangingindent">Ehrlich, Richard, creator. Untitled from the portfolio, Holocaust Archives, International Tracing Service, Bad Arolsen, Germany. 2007, creation. Artstor, library-artstor-org.oxy.idm.oclc.org/asset/34577323
-          </p>
+        
         </div>
-                  
-
 
         </div>
       </div>
@@ -388,20 +360,19 @@
     <!-- QUESTION 3: ANSWER=-->
     <div class="timeline-item">
 			<div class="timeline-dot"></div>
-			<div class="timeline-date">1936</div>
       <div class="quiz">
-        <p><b>Statement 3: </b>The Battle of Cable Street was a confrontation between anti-fascist protesters and the British Union of Fascists.</p>
-        <button onclick="checkAnswer('true', 'true', 3)" style="background-color: green; color: white;">True</button>
-        <button onclick="checkAnswer('false', 'true', 3)" style="background-color: red; color: white;">False</button>
+        <p><b>Scenario #3: </b>You are a 5th-grade elementary school teacher organizing a classroom cleanup. Some items need to be moved and taken off of shelves, which are pretty heavy. You call attention to your class and ask some of your students to help with the lifting process. Who do you ask?</p>
+        <button onclick="checkAnswer('true', 'true', 3)" style="background-color: rgb(18, 159, 149); color: white;"> <b>Option A: </b>Ask for volunteers from all students, regardless of gender, to help move the items.
+        </button>
+        <button onclick="checkAnswer('false', 'true', 3)" style="background-color: rgb(219, 62, 204); color: white;"> <b>Option B: </b> Ask only the boys in the class to handle moving the heavier items.</button>
         <span id="feedback-3" class="correct-incorrect"></span>
       </div>
 			<div class="timeline-content" id="timeline-text-3" style="display: none;">
-        <h3>Battle of Cable Street
+        <h3>Feedback on Asking students to carry heavy items
         </h3>
-        <p class = "noselect">This statement is true the Battle of Cable Street was a confrontation between anti-fascist protesters 
-          and the British Union of Fascists (BUF) led by Oswald Mosley, a former member of Parliament 
-          who founded the BUF in 1932. They built barricades and clashed with the police, who were assigned 
-          to accompany the march, to prevent the BUF from spreading their message of hatred and intolerance.
+        <p class = "noselect">Option A reflects a traditional approach that reinforces the stereotype that physical tasks are better suited to boys, 
+          potentially reinforcing gender-specific roles from a young age. From our discussion earlier in a previous scenario, Ahmed emphasizes the 
+          importance of challenging gender norms from a young age, advocating for an educational environment that actively disrupts traditional gender roles.
         </p>
         <button class="read-more" id="info-btn-3" style="background-color: purple; color: white;">Read More</button>
         <div class="modal" id="modal-3">
@@ -409,46 +380,25 @@
             <span class="close">&times;</span>
             <br>
             <div class = "clearfix">
-              <img class="modal-image zoom-on-hover" src="images/event-images/cable-street.webp" alt="Pineapple" title="Hitler & Mussolini greet each other for the first time in Venice" 
-              width="600" height="400" padding = "8px">
+
             <p class = "noselect" style="color: white; font-size: 18px;"> 
             <b> More information </b>
             <br>
             <br>
-            The Battle of Cable Street is an example of grassroots resistance against the rise of fascism
-             in the 1930s. This event occurred when fascist ideologies were gaining momentum across Europe, 
-             such as Mussolini's rise to power in Italy as discussed in the previous event. The diverse group of 
-             anti-fascist protesters, up to 200,000, included Jewish residents, Irish dock workers and laborers, 
-             Communists, and Labour Party members. The demonstrators' successful effort to force Mosley and the 
-             BUF to turn back shows the power of collective action against oppressive ideologies.
+            In this scenario, as a teacher, you are actively engaging with Judith Butler’s theories on gender performativity. By choosing Option A, you challenge the traditional gender norms that often restrict such physical tasks to boys, fostering a classroom environment that promotes equality and disrupts ingrained gender roles from a young age. By allowing all students, regardless of gender, to participate in moving items, you encourage them to perform acts outside of those traditionally associated with their gender, thereby questioning and potentially reshaping these norms.
             <br>
             <br>
-            Their chant, <i>"No Pasarán! They Shall Not Pass!"</i>—borrowed from Spain's anti-fascist movement—symbolized 
-            their determination to stand up against the BUF's hateful rhetoric, which targeted Jews and Communists ("Standing up to Hatred on Cable Street").
-             This event demonstrates how communities could unite in the face of the growing fascist threat and fight
-              to protect their values and way of life. 
+            Furthermore, Butler explains that these acts of gender are not just private performances but are inherently public and collective, stating that "repetition is at once a reenactment and reexperiencing of a set of meanings already socially established." In the classroom setting, inviting all students to engage in what might traditionally be considered 'masculine' tasks makes this action public and part of a collective experience, contributing to the "mundane and ritualized form of their legitimation." Challenging these norms in the educational environment fosters a space where gendered assumptions are questioned and actively dismantled, encouraging a more inclusive and equitable approach to all activities.
             <br>
-            <br>
-            <b>Editor's Opinion:</b>
-            <br>
-            <br>
-            I find the Battle of Cable Street to be a powerful illustration of the potential for ordinary 
-            people to make a stand against hateful ideologies. This event highlights the importance of community 
-            solidarity and collective action in the face of oppressive forces, such as the BUF's brand of fascism. 
-             By understanding how communities have successfully resisted the rise of fascism in the past, we can better
-              equip ourselves to recognize and confront similar threats in the present and future.
             <br>
             <p></p>
             <button class="collapsible"><b>Sources</b></button>
             <div class="content">
-              <p class="hangingindent">“Standing up to Hatred on Cable Street.” Facing History and Ourselves, 19 Aug. 2019, www.facinghistory.org/en-gb/resource-library/standing-hatred-cable-street-0.  
+              <p class="hangingindent">Butler, J. (1988). Performative Acts and Gender Constitution: An Essay in Phenomenology and Feminist Theory. Theatre Journal, 40(4), 519–531. https://doi.org/10.2307/3207893
               </p>
               <br>
-              <p class="hangingindent">Police arrest an antifascist demonstrator near Cable Street in east London. 10/4/1936, Flashbak, https://flashbak.com/the-battle-of-cable-street-when-20000-antifascist-workers-fought-back-against-the-police-and-oswald-mosleys-british-union-of-fascists-in-1936-441748/.</p>
-            </div>
-                      
 
-
+            </div>        
             </div>
         </div>
       </div>
@@ -464,68 +414,44 @@
     <!-- QUESTION 4: ANSWER=-->
     <div class="timeline-item">
 			<div class="timeline-dot"></div>
-			<div class="timeline-date">November 1938</div>
       <div class="quiz">
-        <p><b>Statement 4: </b>Kristallnacht was an event started and initiated by the Jews trying to instigate violence among the people.</p>
-        <button onclick="checkAnswer('false', 'true', 4)" style="background-color: green; color: white;">True </button>
-        <button onclick="checkAnswer('true', 'true', 4)" style="background-color: red; color: white;">False</button>
+        <p><b>Scenario #4: </b>You are walking down York Blvd. from Bagel & Slice back to campus, and a man is approaching from the opposite direction, walking in a hurry like he is late to something, also taking up much of the path. There are only a couple more feet before you cross paths on the sidewalk. What action do you take? </p>
+        <button onclick="checkAnswer('false', 'true', 4)" style="background-color: rgb(18, 159, 149); color: white;"> <b>Option A: </b> Step aside to let him pass first, following traditional courtesy norms.
+        </button>
+        <button onclick="checkAnswer('true', 'true', 4)" style="background-color: rgb(219, 62, 204); color: white;"> <b>Option B:</b> Continue walking your path, expecting to share the space equally.
+          </button>
         <span id="feedback-4" class="correct-incorrect"></span>
       </div>
 			<div class="timeline-content" id="timeline-text-4" style="display: none;">
-        <h3>Kristallnacht</h3>
-        <p class = "noselect"> The statement is false. Jews did not initiate Kristallnacht, but rather it was a series of Nazi-sponsored pogroms launched on November 9-10, 1938. 
-          These pogroms led to the destruction of 1,500 synagogues, thousands of Jewish businesses and homes, and the murder of many Jews.
-           The violence was instigated by Nazi propaganda, and the Jews were falsely blamed for starting the riots. </p>
+        <h3> Feedback for Microfeminism sidewalk etiquette
+        </h3>
+        <p class = "noselect"> While polite, stepping aside can subtly reinforce the idea that one should yield space to male pedestrians, perpetuating a dynamic of deference to men in public spaces.
+           So what if you get bumped? By holding your ground, you engage in everyday activism that challenges traditional public space dynamics, promoting equality and mutual respect. </p>
         <button class="read-more" id="info-btn-4" style="background-color: purple; color: white;">Read More</button>
         <div class="modal" id="modal-4">
           <div class="modal-content">
             <span class="close">&times;</span>
             <br>
             <div class = "clearfix">
-              <img class="modal-image zoom-on-hover" src="images/event-images/Kristallnacht.png" 
-              title="Interior of Synagogue in Baden after Kristallnacht" 
-              width="600" height="700" padding = "8px">
+
             <p class = "noselect" style="color: white; font-size: 18px;"> 
             <b> More information </b>
-            Kristallnacht, or the "Night of Broken Glass," marked a pivotal moment in escalating anti-Semitic violence 
-            and persecution in Nazi Germany. The state-sponsored riots resulted in the loss of Jewish lives, 
-            the devastation of their property, and the tacit approval of these actions by the government. 
-            Propaganda fueled the violence, ultimately leading to the arrest of 30,000 Jews who were then 
-            unjustly blamed for the riots and sent to concentration camps.
             <br>
             <br>
-            According to the Cambridge Dictionary of Judaism and Jewish Culture, 
-            <i>"Nazi leaders were in agreement when it came to blaming Jews for the violence, and they required Germany’s Jewish 
-            community to pay 1 billion Reichsmarks ($401 million) for the murder of vom Rath and the damages caused by the riot"</i> 
-            (Baskin 359). Clearly, the Nazi regime intenfully shifted the blame for the violence and destruction 
-            onto the very people they were persecuting—the Jews. Nazi leaders further dehumanized and marginalized the Jewish population. 
-            This financial burden functioned as a form of collective punishment, making them even more 
-            vulnerable to future persecution.
+            Does it matter who moves and who doesn't? Yes, it matters a lot, in fact. Choosing not to step aside becomes a powerful instance of applying feminist principles in everyday situations. This decision challenges traditional public space dynamics and counters the subtle reinforcement of gender norms, particularly towards men.
             <br>
             <br>
-            In addition, <i>“Hitler told the Reichstag that if Jewish ﬁnanciers 'once again' plunged Europe into war, the result would not be the bolshevization of the world, but the 'annihilation of the Jewish race in Europe'</i>(Baskin 359). 
-            The excerpt reveals Hitler's manipulation of the preconceived notion that Jews were responsible for instigating violence to justify his 
-            anti-Semitic policies. By claiming that Jewish financiers were capable of plunging Europe into war, he sought to strengthen the belief that Jews were a danger to society.
+            In her commentary for the National Review, Katherine Timpf discusses Beth Breslaw's informal experiment about gender dynamics on sidewalks. Titled "I ‘Walked Like a Man’ and Three Times As Many Women Ran into Me as Men," Timpf's piece explores the nuances of what Breslaw coined as "manslamming", a play on words from the very popular term “mansplaining,  the phenomenon where men, influenced by societal norms, are less likely to yield space on sidewalks to women. However, Timpf conducted her version of the experiment, which yielded different results, showing that three times as many women bumped into her as men. This finding challenges the notion that sidewalk dynamics are purely gender-based and invites readers to consider the complexity of social behaviors in public spaces.
             <br>
             <br>
-            <b>Editor's Opinion:</b>
-            <br>
-            <br>
-            Kristallnacht is a dark chapter in history that illustrates the devastating impact of racism, antisemitism, and state-sponsored persecution. 
-            As someone who just learned of this event in  lecture, I believe it is crucial for everyone to understand the events surrounding Kristallnacht to 
-            recognize the dangers of allowing such hatred to fester unchecked in society. 
-            By studying this event, we can work towards fostering a more inclusive, tolerant, and 
-            empathetic world. The false blame placed on Jews for instigating the violence is a stark reminder 
-            of how propaganda can manipulate public opinion and justify atrocities against innocent people.
+            We will shift to the work of adrienne maree brown (yes, their name is lowercase intentionally), most notably known as a writer, activist, and facilitator informed by 25 years of social and environmental justice facilitation primarily supporting Black liberation. Her works, including Emergent Strategy and We Will Not Cancel Us, provide a theoretical framework for understanding the implications of such actions, like not moving out of the way on the sidewalk. brown describes emergence as noticing "how small actions and critical connections create complex systems that become ecosystems and societies" (Emergent Strategy, 2017). This concept parallels the choice in this scenario, where a seemingly minor act of holding one's ground contributes to a broader cultural shift towards gender equality and mutual respect in public spaces. brown critiques the pleasure derived from punitive measures and emphasizes the importance of fostering environments based on care and healing. In We Will Not Cancel Us, she argues against the satisfaction derived from punitive actions, suggesting instead that we should "invest in the pleasures that heal us rather than the pleasures that create more harm" (We Will Not Cancel Us, 44). This sentiment supports the decision to figuratively and literally walk your path without yielding, as it promotes a practice of non-punitive interaction that underscores mutual respect and coexistence rather than submission or dominance.
             <br>
             <br>
             <p></p>
             <button class="collapsible"><b>Sources</b></button>
             <div class="content">
-              <p class="hangingindent">The Cambridge Dictionary of Judaism and Jewish Culture, edited by Judith R. Baskin, Cambridge University Press, 2011. ProQuest Ebook Central, https://ebookcentral.proquest.com/lib/oxy/detail.action?docID=1744019.</p>
+              <p class="hangingindent">Timpf, K. (2015, January). Video: I walked as a man, and three times as many women ran into me as men. National Review. https://www.nationalreview.com/2015/01/video-i-walked-man-and-three-times-many-women-ran-me-men-katherine-timpf/</p>
               <br>
-              <p class="hangingindent">Interior of Synagogue in Baden after Kristallnacht. Artstor, library-artstor-org.oxy.idm.oclc.org/asset/ARTSTOR_103_41822001671104 
-              </p>
             </div>
                       
 
@@ -539,20 +465,18 @@
        <!-- QUESTION 5: ANSWER=-->
        <div class="timeline-item">
         <div class="timeline-dot"></div>
-        <div class="timeline-date">1939</div>
+
         <div class="quiz">
-          <p> <b>Statement 5:</b> The invasion of Poland was the precursor that started WW2.
+          <p> <b>Scenario #5</b> You are an officiant at a wedding ceremony. As the ceremony nears its conclusion, it's time for the couple to share a kiss. At rehearsal, they told you they did not prefer how you announced the kiss. How do you phrase this moment to challenge traditional gender roles and norms?
           </p>
-          <button onclick="checkAnswer('true', 'true', 5)" style="background-color: green; color: white;">True</button>
-          <button onclick="checkAnswer('false', 'true', 5)" style="background-color: red; color: white;">False</button>
+          <button onclick="checkAnswer('true', 'true', 5)" style="background-color: rgb(18, 159, 149);; color: white;"><b>Option A: </b>Choose a more inclusive and equal phrasing, "You may now kiss each other," to promote mutual consent and equality.</button>
+          <button onclick="checkAnswer('false', 'true', 5)" style="background-color: rgb(219, 62, 204); color: white;"><b>Option B: </b>Use the traditional phrasing, "You may now kiss the bride," which often implies male initiation and authority in the act.</button>
           <span id="feedback-5" class="correct-incorrect"></span>
         </div>
         <div class="timeline-content" id="timeline-text-5" style="display: none;">
-          <h3> Invasion of Poland - Precursor to World War 2 + Lebensraum
+          <h3> Feedback for Officiating wedding ceremony
           </h3>
-          <p class = "noselect">The statement is true. The September 1, 1939 invasion marked World War II's beginning. 
-            The invasion served as a concept of "lebensraum" and was central to Hitler's expansionist policies. Hitler’a idea of Lebensraum was used to justify the invasion of Poland and other territories, leading to the forced displacement, exploitation, and persecution of millions of people.
-            The invasion prompted Britain and France, allied with Poland, to declare war on Germany, thus initiating a global conflict. 
+          <p class = "noselect"> Option A can easily be seen as the “Gold standard,” at least when it comes to heteronormative wedding ceremonies. This traditional phrasing reinforces historical gender roles and norms, where one party, typically the groom, initiates the action, implying a transfer of authority or permission. By altering the phrase to "You may now kiss each other," you challenge the traditional notion of male authority and promote a sense of mutual respect and equality. 
             </p>
           <button class="read-more" id="info-btn-5" style="background-color: purple; color: white;">Read More</button>
           <div class="modal" id="modal-5">
@@ -560,57 +484,28 @@
               <span class="close">&times;</span>
               <br>
               <div class = "clearfix">
-                <img class="modal-image zoom-on-hover" src="images/event-images/hitler-catoon.png" alt="Pineapple" title="Hitler & Mussolini greet each other for the first time in Venice" 
-                width="450" height="700" padding = "8px">
-              <p class = "noselect" style="color: white; font-size: 18px;"> 
+  
               <b> More information </b>
               <br>
               <br>
-              Hitler began to put the German economy on a war footing, devoting significant resources to rearmament and creating new jobs. 
-              Britain and France made alliances with Poland, pledging to go to war if Poland was attacked. 
-              This set the stage for World War II's outbreak following Poland's invasion.
+              Suppose you ever decide to be an officiant at a wedding. Use this scenario as your first lesson; choosing Option B: "You may now kiss each other," is a significant step towards challenging traditional gender roles and norms; it doesn't make the ceremony any less memorable by swapping a few words out. This phrasing promotes a sense of equality and mutual consent, moving away from the traditional, gendered directive, "You may now kiss the bride," which typically implies male initiation and dominance in the act.
+              <br>
+              <br>
+              Judith Lorber, in "Believing is Seeing: Biology as Ideology," emphasizes that what is often seen as natural or predestined by biology is, in fact, a cultural destiny. She argues, "Not biology, but culture, becomes destiny," highlighting how we perform and interpret gender, which is learned and perpetuated through cultural practices (Lorber, 1993). By choosing an egalitarian phrase like "You may now kiss each other," you underscore that actions typically bound by gender can be transformed, supporting a broader cultural shift towards recognizing and practicing gender equality.
+              <br>
+              <br>
+              This approach not only aligns with feminist theoretical frameworks but also actively contributes to the ongoing effort to shape a society where gender norms do not dictate the limits of personal expression or action. In this way, the wedding becomes a site of subtle yet powerful societal change, reflecting a move towards more inclusive and equitable gender practices.
+              
               <br>
               <br>
 
-              The remark states, <i>"According to Nazi racial ideology, the effects of which occupied Poland had already 
-              experienced since 1939, Slavic peoples were inferior to Germanics and suited primarily for physical labor. 
-              From the start, the war against the Soviet Union was planned as a war of extermination (Doc. 5.11) in which 
-              the traditional rules of warfare were to be ignored. Jews and Communist officials were targeted for mass 
-              murder in plans drawn up before the attack”</i> (Stackelberg and Winkle 117).
-              <br>
-              <br>
-              The excerpt  highlights how the Nazi racial ideology viewed Slavic peoples as inferior to Germanics,
-               considering them primarily suited for physical labor. 
-              The invasion of Poland and the subsequent war against the Soviet Union, fueled by these ideologies, set the 
-              stage for a global conflict. Countries like Britain and France were compelled to defend Poland and their own 
-              interests against the growing threat of the Nazis.
-              <br>
-              <br>
-              Other factors that played a role in the lead-up to World War II happened in the USSR, 
-              when Stalin had established himself as the sole leader by 1928 and embarked on a top-down program 
-              of industrialization and collectivization. Nazi Germany occupied France in July 1940, leading to 
-              the rounding up of Jews living freely in unoccupied France. The Blitz, which lasted from September 
-              1940 to May 1941, saw the deaths of 40,000 Britons. These events contributed to the escalation of the c
-              onflict and the spread of racism and antisemitism across Europe.
-              <br>
-              <br>
-              <b>Editor's Opinion:</b>
-              <br>
-              <br>
-              The invasion of Poland resulted in the Polish population's displacement and 
-              exploitation and set off a chain of events that led to a global conflict marked by racism, 
-              antisemitism, and unprecedented violence. 
-              When history is hoved under the rug, we forget who it imapcted and why it cannot happen again.
-              It is essential to remember these events and their consequences on the world to prevent 
-              similar tragedies from occurring in the future. 
-              <br>
               
               <p></p>
               <button class="collapsible"><b>Sources</b></button>
               <div class="content">
-                <p class="hangingindent">The Nazi Germany Sourcebook : An Anthology of Texts, edited by Roderick Stackelberg, and Sally A. Winkle, Taylor & Francis Group, 2002. ProQuest Ebook Central, https://ebookcentral.proquest.com/lib/oxy/detail.action?docID=170682.</p>
+                <p class="hangingindent">Lorber, J. (1993). Believing is Seeing: Biology as Ideology. Gender & Society, 7(4), 568–581. https://doi-org.oxy.idm.oclc.org/10.1177/089124393007004006</p>
                 <br>
-                <p class="hangingindent">Arthur Szyk (Polish American, 1894-1951). Lebensraum, Le Future de l’Europe. Watercolor and gouache on paper, 1939. The Magnes Collection of Jewish Art and Life, University of California, Berkeley, JSTOR, https://jstor.org/stable/community.29324792. Accessed 17 Apr. 2023.</p>
+               
               </div>
                         
   
@@ -624,426 +519,9 @@
   
     </div>
 
-
-        <!-- QUESTION 6: ANSWER=-->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">1940s</div>
-          <div class="quiz">
-            <p><b>Statement 6: </b>There were multiple concentration camps during the Holocaust, not just Auschwitz.</p>
-            <button onclick="checkAnswer('true', 'true', 6)" style="background-color: green; color: white;">True</button>
-            <button onclick="checkAnswer('false', 'true', 6)" style="background-color: red; color: white;">False</button>
-            <span id="feedback-6" class="correct-incorrect"></span>
-          </div>
-          <div class="timeline-content" id="timeline-text-6" style="display: none;">
-            <h3>Auschwitz</h3>
-            <p class = "noselect"> The statement is true. As the Holocaust unfolded, the Nazis created a network of
-               extermination camps designed for the mass murder of Jews, as well as other targeted groups. 
-               While Auschwitz is the most well-known and infamous of these camps, others, such as Treblinka, Sobibor,
-                and Belzec, were also key sites of mass murder. Understanding that Auschwitz was not the only 
-                death camp highlights the scale and horror of the Holocaust.
-            </p>
-            <button class="read-more" id="info-btn-6" style="background-color: purple; color: white;">Read More</button>
-            <div class="modal" id="modal-6">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <br>
-                <div class = "clearfix">
-                  <img class="modal-image zoom-on-hover" src="images/event-images/a-camp.png" alt="Pineapple" title="Exterior,Auschwitz Concentration Camp,Poland,1993" 
-                  width="526"  padding = "8px">
-                <p class = "noselect" style="color: white; font-size: 18px;"> 
-                <b> More information </b>
-                <br>
-                <br>
-                In the excerpt, the author states: <i>"But in the spring and early summer of 1944, Auschwitz was stretched to
-                   capacity and beyond by the most horrific and frenzied killing spree the camp would ever see. 
-                   The Jews who were to suffer and die during this terrible time came almost exclusively from one country— Hungary" </i>(Rees 219).
-                <br>
-                <br>
-                The quote emphasizes the human cost of political decisions and the terrifying efficiency with which the Nazis carried
-                 out their genocidal plans. The extreme nature of the mass killings at Auschwitz during the spring and early summer of 
-                 1944 was horrific. The camp was pushed beyond its capacity as Hungarian Jews were targeted and sent to the death camp. 
-                 The large influx of Hungarian Jews resulted from the complex political maneuverings of Hungary, which ultimately chose to 
-                 ally itself with the Axis powers, hoping to benefit from territorial gains and the perceived likelihood of a Nazi victory.
-                <br>
-                <br>
-                <b>Editor's Opinion:</b>
-                <br>
-                <br>
-                Studying the construction and operation of Auschwitz and other death camps in this course helps us confront the unimaginable
-                 horrors that took place during the Holocaust. By examining the political, social, and logistical factors that contributed to
-                  the establishment of these camps, we can better understand the depths of human cruelty and the importance of standing against hatred and 
-                  prejudice. As students, as a human, we must learn from history to ensure that such atrocities never happen again.
-                <br>
-                <br>
-
-                <p></p>
-                <button class="collapsible"><b>Sources</b></button>
-                <div class="content">
-                  <p class="hangingindent">Rees, Laurence. Auschwitz : A New History, PublicAffairs, 2005. ProQuest Ebook Central, https://ebookcentral.proquest.com/lib/oxy/detail.action?docID=729438.</p>
-                  <br>
-                  <p class="hangingindent">Judy Ellis Glickman. Exterior,Auschwitz Concentration Camp,Poland,1993. Infrared silver print on paper, 1990. Colby College Museum of Art; Gift of Judith and Albert Glickman, JSTOR, https://jstor.org/stable/community.14730369. Accessed 17 Apr. 2023.</p>
-                </div>
-                          
     
-    
-                </div>
-            </div>
-          </div>
-        </div>
-    
-        
-    
-      </div>
 
-
-    <!-- QUESTION 7: ANSWER=-->
-    <div class="timeline-item">
-			<div class="timeline-dot"></div>
-			<div class="timeline-date">April 1943</div>
-      <div class="quiz">
-        <p> <b>Statement 7:</b> During the pre-curssors to the Holocaust, Jewish captives were submissive and compliant the whole time.</p>
-        <button onclick="checkAnswer('false', 'true', 7)" style="background-color: green; color: white;">True</button>
-        <button onclick="checkAnswer('true', 'true', 7)" style="background-color: red; color: white;">False</button>
-        <span id="feedback-7" class="correct-incorrect"></span>
-      </div>
-			<div class="timeline-content" id="timeline-text-7" style="display: none;">
-        <h3>Start of the Holocaust + Waesaw Ghetto Uprising</h3>
-        <p class = "noselect">The statement is false. Jewish captives displayed various forms of resistance throughout the Holocaust, 
-          demonstrating courage and determination in adversity.
-           One notable example is the Warsaw Ghetto uprising in April 1943. 
-           This event shows that Jewish people were not passive in the face of Nazi 
-           oppression but actively fought against their persecution. </p>
-        <button class="read-more" id="info-btn-7" style="background-color: purple; color: white;">Read More</button>
-        <div class="modal" id="modal-7">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <br>
-            <div class = "clearfix">
-              <img class="modal-image zoom-on-hover" src="images/event-images/warsaw.png"  title="POLAND. icp 762. Warsaw. October 1948. The remains of the Jewish 'ghetto'." 
-              width="700" height="850" padding = "8px">
-            <p class = "noselect" style="color: white; font-size: 18px;"> 
-            <b> More information </b>
-            <br>
-            <br>
-            More information: The Holocaust was a horrific event in history, where millions of Jews and other minority
-             groups were systematically persecuted and killed by the Nazis. The policy shift from expelling Jews to 
-             exterminating them, the construction of Jewish ghettos, and the implementation of mass killing methods 
-             like gas chambers are only a few of the primary tactics used. One of the most significant acts of resistance 
-             was the Warsaw Ghetto uprising in April-May 1943, where Jews fought back against the Nazis, though ultimately
-              unsuccessful.<i>”The Warsaw ghetto - was the largest in Nazi-occupied Europe. [R]esistance organizations in the 
-              Warsaw ghetto staged an uprising against deportations, which resulted in a six-week battle with the German authorities”</i>(Baskin 238).
-            <br>
-            <br>
-            In his book "Voices from the Warsaw Ghetto: Writing Our History," David G. Roskies explains 
-            Emanuel Ringelblum's archival project aimed to combat General Jürgen Stroop's version of events, 
-            who had sent a leather-bound report titled <i>"The Jewish Quarter of Warsaw is no more!"</i> to Heinrich Himmler. 
-            This report detailed the suppression of the Warsaw Ghetto uprising and the destruction of the ghetto. Ringelblum, a historian and social activist, wanted to ensure that the victims of the Holocaust had the opportunity to tell their own stories in their own voices.
-            <br>
-            <br>
-            Roskies explains the significance of Ringelblum's work: <i>"Of all these people, only a few survived. Of all the
-               documentation, however, 1,693 items comprising 35,000 pages were recovered from the Ringelblum Archive alone. 
-               So it is through paper that today one can conjure up the people anew—through all manner of minutes, memoranda, 
-               diaries, memoirs, last letters, essays, poems, songs, jokes, novels, stories, plays, questionnaires, charts, scholarly 
-               treatises, sermons, classroom compositions, diplomas, proclamations, posters, photographs, drawings, and paintings"</i> (Roskies 8).
-            <br>
-            <br>
-            Ringelblum brought together a diverse team of individuals, including chroniclers, statisticians, economists, 
-            social scientists, activists, medical doctors, reporters, poets, photographers, and graphic artists, 
-            to document the collective record of a civilization responding to its own destruction. 
-            The archival material and documents buried by the Jews during the Warsaw Ghetto uprising ensured 
-            that their life stories would be preserved and told, offering an alternative narrative to that of 
-            General Jürgen Stroop. This act further emphasizes the determination of the Jewish people to resist
-             their oppressors and leave a lasting record of their struggle.
-            <br>
-            <br>
-            <b>Editor's Opinion:</b>
-            <br>
-            <br>
-            As someone who once believed this false narrative (pertaining to the original T or F question), 
-            it is vital to acknowledge and honor the diverse forms of resistance displayed by Jews during the Holocaust, 
-            such as the Warsaw Ghetto uprising (but their are many other events). The uprising serves as a powerful reminder of the strength, 
-            determination, and courage of the Jewish people, even when faced with the unimaginable atrocities committed by the Nazis. 
-            A comprehensive study of the Holocaust must include an examination of this resistance to gain a more accurate and nuanced 
-            understanding of the Jewish experience during this dark period in history. 
-            Preserving their history further highlights the importance of remembering and honoring their struggle.
-            <br>
-            <br>
-            <p></p>
-            <button class="collapsible"><b>Sources</b></button>
-            <div class="content">
-              <p class="hangingindent"> The Nazi Germany Sourcebook : An Anthology of Texts, edited by Roderick Stackelberg, and Sally A. Winkle, Taylor & Francis Group, 2002. ProQuest Ebook Central, https://ebookcentral.proquest.com/lib/oxy/detail.action?docID=170682.
-              </p>
-              <br>
-              <p class="hangingindent">Robert Capa. POLAND. Icp 762. Warsaw. October 1948. The Remains of the Jewish “Ghetto”. 1949. JSTOR, https://jstor.org/stable/community.9840502. Accessed 17 Apr. 2023.https://jstor.org/stable/community.9842757. Accessed 17 Apr. 2023. </p>
-              <br>
-              <p class="hangingindent">Roskies, David G., and SAMUEL D. KASSOW. “Introduction.” Voices from the Warsaw Ghetto: Writing Our History, edited by DAVID G. ROSKIES, Yale University Press, 2019, pp. 1–34. JSTOR, https://doi.org/10.2307/j.ctvfc51hn.5. Accessed 3 May 2023.</p>
-
-            </div>
-                      
-
-
-            </div>
-        </div>
-      </div>
-    </div>
-	</div>
-
-
- 
-
-
-
-        <!-- QUESTION 8: ANSWER=-->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">1944</div>
-          <div class="quiz">
-            <p><b>Statement 8:</b> Isaac Fadoyebo was an African American soldier turned hero in WW2, that fought with America to regain his freedom upon return home.</p>
-            <button onclick="checkAnswer('false', 'true', 8)" style="background-color: green; color: white;">True</button>
-            <button onclick="checkAnswer('true', 'true', 8)" style="background-color: red; color: white;">False</button>
-            <span id="feedback-8" class="correct-incorrect"></span>
-          </div>
-          <div class="timeline-content" id="timeline-text-8" style="display: none;">
-            <h3>Isaac Fadoyebo's story</h3>
-            <p class = "noselect">The statement is false. Isaac Fadoyebo was not an African American soldier who fought with America to regain his 
-              freedom upon returning home. Instead, he was a Nigerian soldier who served in the British Army's Royal West African 
-              Frontier Force during World War II, and his story highlights the contributions of African soldiers to the Allied war effort.</p>
-            <button class="read-more" id="info-btn-8" style="background-color: purple; color: white;">Read More</button>
-            <div class="modal" id="modal-8">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <br>
-                <div class = "clearfix">
-                  <img class="modal-image zoom-on-hover" src="images/event-images/isaac.png" alt="Pineapple" title="Isaac Fadoyebo less than a year before he died in 2019" 
-                  width="526" height="739" padding = "8px">
-                <p class = "noselect" style="color: white; font-size: 18px;"> 
-                <b> More information </b>
-                <br>
-                <br>
-                Isaac Fadoyebo's story provides a unique perspective on the experiences of African soldiers during World War II. 
-                In, African Voices of the Global Past : 1500 to the Present Trevor R. Getz mentions that <i>"Nigerians donated money and labor toward 
-                  prosecuting the wars, which originated outside the continent. And, more generally, Africa hosted some of the 
-                  theaters of wars and bore the hardship accentuated by wartime policies"</i> (Getz). This remark illuminates that 
-                  African nations, like Nigeria, played a significant role in supporting the Allied war effort, not only by providing soldiers but also through 
-                  financial and logistical contributions. Despite the war originating outside their continent, Africans were deeply affected by the conflict and its consequences.
-                <br>
-                <br>
-                In addition, Fadoyebo describes the harrowing experience of being wounded in battle and witnessing the death of his comrade, Essien.
-                 He states, <i>"I would have thought that I had developed supernatural powers were it not that two bullets had already been lodged in my body"</i> (Fadoyebo). 
-                 Fadoyebo’s comment emphasizes the dangerous and life-threatening conditions that African soldiers faced during the war. 
-                 Fadoyebo's story highlights the bravery and sacrifice of black soldiers who fought alongside their American and British counterparts,
-                  showing that the war effort was a truly global.
-                <br>
-                <br>
-                <b>Editor's opinion:</b>
-                <br>
-                <br>
-                Isaac Fadoyebo's story is a powerful reminder of the diverse and often (very) overlooked contributions made by
-                 African soldiers during World War II. As a student but also decesdant of African ancestors, understanding these stories enriches my
-                  knowledge of the war and helps me appreciate the global nature of the conflict. 
-                  It is essential to recognize and honor the sacrifices made by soldiers like Fadoyebo, who risked their lives in a war that originated outside their continent. 
-                <br>
-                <br>
-                The inclusion of the fact that African nations actively contributed to the war effort, 
-                both in terms of human resources and financial support, underscores the interconnectedness of 
-                the world during this period and demonstrates the far-reaching impact of World War II.
-                <br>
-                <br>
-
-                <p></p>
-                <button class="collapsible"><b>Sources</b></button>
-                <div class="content">
-                  <p class="hangingindent">R., Getz, Trevor. African Voices of the Global Past : 1500 to the Present, Taylor & Francis Group, 2013. ProQuest Ebook Central, https://ebookcentral.proquest.com/lib/oxy/detail.action?docID=3029347.</p>
-                  <br>
-                  <p class="hangingindent">Fadoyebo, Isaac, and David. Killingray. A Stroke of Unbelievable Luck. Madison: African Studies Program, University of Wisconsin--Madison, 1999. Print.
-                  </p>
-                  <br>
-                  <p class="hangingindent">https://i.guim.co.uk/img/static/sys-images/Guardian/Pix/pictures/2012/11/21/1353503099985/Isaac-Fadoyebo-008.jpg?width=465&quality=85&dpr=1&s=none</p>
-                </div>
-                          
-    
-    
-                </div>
-            </div>
-          </div>
-        </div>
-    
-        
-    
-      </div>
-
-
-   
-
-
-        <!-- QUESTION 9: ANSWER=-->
-        <div class="timeline-item">
-          <div class="timeline-dot"></div>
-          <div class="timeline-date">December 1, 1944</div>
-          <div class="quiz">
-            <p><b>Statement 9:</b> The Thiaroye massacre was a peaceful protest by West African veterans that resulted in significant improvements in their rights and recognition for their service during World War II.</p>
-            <button onclick="checkAnswer('false', 'true', 9)" style="background-color: green; color: white;">True</button>
-            <button onclick="checkAnswer('true', 'true', 9)" style="background-color: red; color: white;">False</button>
-            <span id="feedback-9" class="correct-incorrect"></span>
-          </div>
-          <div class="timeline-content" id="timeline-text-9" style="display: none;">
-            <h3>Thiaroye massacre</h3>
-            <p class = "noselect">This is false. The thiaroye massacre was a protest, but it was defiantly not peaceful and not beneficial to West African veterans. 
-              This massacre was a violent response by the French army to the legitimate demands of their African soldiers for back pay, war allowances, 
-              and demobilization bonuses. The French authorities ignored these demands, fearing a more global uprising among colonial subjects. </p>
-            <button class="read-more" id="info-btn-9" style="background-color: purple; color: white;">Read More</button>
-            <div class="modal" id="modal-9">
-              <div class="modal-content">
-                <span class="close">&times;</span>
-                <br>
-                <div class = "clearfix">
-                  <img class="modal-image zoom-on-hover" src="images/event-images/camp.jpg" alt="Pineapple" title="Camp de Thiaroye" 
-                   padding = "8px">
-                <p class = "noselect" style="color: white; font-size: 18px;"> 
-                <b> More information</b>
-                <br>
-                <br>
-                The Thiaroye massacre remains a significant event in the collective memory of West Africans. 
-                The massacre resulted in 24 infantrymen killed, eleven dead as a result of their injuries, 35 wounded, and 45
-                 imprisoned mutineers. The massacre revealed the darker side of French colonial rule and the unwillingness of French authorities to treat African soldiers with the same respect and recognition as their French counterparts.
-                <br>
-                <br>
-                As Sabrina Parent says in her devoted chapter “(Re) Writing the Massacre of Thiaroye”, 
-                African infantrymen who had fought alongside the French against the Nazis were ordered to r
-                eturn to their remote villages. They protested and captured General Dagnan, demanding the monetary
-                 compensation they were owed. However, the French colonial authorities dismissed their claims, 
-                 fearing a broader "black uprising" and wanting to make Thiaroye an example.
-                <br>
-                <br>
-                An officer in charge stated that the soldiers were dismissed because they,
-                 <i>"by arrogance, vanity or jealousy, [dared to demand] a status identical to the French"</i>. 
-                 Obviously, the French military authorities were not ready to cope with the demands for égalité coming from colonial subjects” (Parent 23). 
-                 The unwillingness of the French authorities to acknowledge the equality and contributions of the African soldiers.
-                  Further in the text Parent quotes historian Bénot who suggest that Thiaroye was meant to be an example of 
-                  "preventive repression," showing the extent to which the French sought to suppress any potential uprising.
-                <br>
-                <br>
-                To this day the Thiaroye massacre remains largely absent from French artistic representations and cultural discourse, 
-                reflecting the darker side of French colonial history that remains unaddressed.By examining these interpretations, we can better understand the
-                historical context and the motivations behind the event. 
-                <br>
-                <br>
-                <b>Editors Opinion</b>
-                <br>
-                <br>
-                The Thiaroye massacre is a powerful example of Michel-Rolph Trouillot's concept of "silencing the past."
-                 For many years, the French cultural discourse remained silent on the event. It took the efforts of historians, 
-                 journalists, and West African artists to bring attention to this dark episode in history. By revisiting the 
-                 Thiaroye massacre, we can begin to challenge the dominant narratives that have long marginalized or excluded 
-                 the voices of those who suffered under colonial rule.
-                <br>
-                <br>
-                Trouillot's book Silencing the Past: Power and the Production of History reminds us that <i>"power does not enter the story once and for all, but at different times and from different angles" (Trouillot 120).</i>
-                 By examining the Thiaroye massacre through the lens of power dynamics, we can better understand how the French colonial authorities sought to suppress dissent and maintain control over their subjects. 
-                <br>
-                <br>
-               
-                
-                <p></p>
-                <button class="collapsible"><b>Sources</b></button>
-                <div class="content">
-                  <p class="hangingindent">Parent, Sabrina. “(Re) Writing the Massacre of Thiaroye.” Narrating War and Peace in Africa, edited by Toyin Falola and Hetty ter Haar, NED-New edition, Boydell & Brewer, 2010, pp. 231–40. JSTOR, http://www.jstor.org/stable/10.7722/j.ctt1bh49bk.15. Accessed 4 May 2023.</p>
-                  <br>
-                  <p class="hangingindent">Trouillot, Michel-Rolph, and Hazel V. Carby. Silencing the Past : Power and the Production of History. Boston: Beacon Press, 2015. Print.
-                  </p>
-                  <br>
-                  <p class="hangingindent">"Le massacre de Thiaroye: Monsieur Macron, réhabilitez la mémoire des tirailleurs sénégalais." Le Monde, 6 Nov. 2018, https://www.lemonde.fr/afrique/article/2018/11/06/massacre-de-thiaroye-monsieur-macron-rehabilitez-la-memoire-des-tirailleurs-senegalais_5379491_3212.html. Accessed 17 Apr. 2023.
-                  </p>
-                </div>
-                          
-    
-    
-                </div>
-            </div>
-          </div>
-        </div>
-    
-        
-    
-      </div>
-
-
-     <!-- QUESTION 10: ANSWER=-->
-     <div class="timeline-item">
-      <div class="timeline-dot"></div>
-      <div class="timeline-date">WWII - late 20th century</div>
-      <div class="quiz">
-        <p><b>Statement 10:</b> Theodor Michael was a Black German, not an African American, who faced racial discrimination and persecution while living in Nazi Germany.</p>
-        <button onclick="checkAnswer('true', 'true', 10)" style="background-color: green; color: white;">True</button>
-        <button onclick="checkAnswer('false', 'true', 10)" style="background-color: red; color: white;">False</button>
-        <span id="feedback-10" class="correct-incorrect"></span>
-      </div>
-      <div class="timeline-content" id="timeline-text-10" style="display: none;">
-        <h3>Black in Germany: Theodor Michael's story</h3>
-        <p class = "noselect">Theodor Michael was a Black German, not an African American, who faced racial discrimination and persecution 
-          while living in Nazi Germany. Born in Berlin, he was one of the few Black Germans living during this time, a
-          nd his experience was vastly different from that of African Americans. Michael was subjected to the harsh racial 
-          policies of the Nazi regime, which led to his forced labor and isolation from his peers. The true nature of his 
-          experience highlights the complexity of racial identities and experiences during World War II. </p>
-        <button class="read-more" id="info-btn-10" style="background-color: purple; color: white;">Read More</button>
-        <div class="modal" id="modal-10">
-          <div class="modal-content">
-            <span class="close">&times;</span>
-            <br>
-            <div class = "clearfix">
-              <img class="modal-image zoom-on-hover" src="images/event-images/old-TR.jpeg" alt="Pineapple" title="Hitler & Mussolini greet each other for the first time in Venice" 
-              width="526" height="739" padding = "8px">
-            <p class = "noselect" style="color: white; font-size: 18px;"> 
-              <br>
-              <b>More information:</b>
-              <br>
-              <br>
-              In his autobiography titled “Black German” (and translated by Eve Rosenhaft) Theodor Michael, 
-              the son of a Cameroonian Father and German Mother, recounts his experience living in Nazi Germany 
-              as a Black German: <i>"I spoke only German and once again there was no place where I fit in. Other 'countrymen'
-                who were compelled to do forced labor had the same experience. Even the Nazis didn’t have a pigeonhole for us" </i>
-               (Michael and Rosenhaft 81).  
-               He describes his unique challenges as a Black German, being ostracized and discriminated against due to his race and nationality.
-              <br>
-              <br>
-              The lives of Black people in Germany and Europe during the Nazi era were characterized by racial discrimination, 
-              persecution, and marginalization. Michale proceeds to provide insight into the broader experience of 
-              Black people in Germany during this time: <i>"In every business that employed foreign workers there was an 
-                Ausländerbetreuer, an official with special responsibility for supervising them. In the factory we had to punch the clock, 
-                and the foreign workers’ time cards were a different color from those of the German workers. 
-                So the Ausländerbetreuer could see at a glance if a card was missing"</i> (Michael and Rosenhaft 82).
-              <br>
-              <br>
-              This utterance stresses the strict surveillance and control mechanisms in place for foreign workers, 
-              which were also applied to Black people living in Germany. Many Black individuals faced forced labor, 
-              deportation, or internment in concentration camps. In addition to the systemic discrimination from the Nazi 
-              egime, they also faced social isolation and ostracization, as they did not fit into any clear category of nationality or race.
-              <br>
-              <br>
-              <b>Editor's opinion section:</b>
-              <br>
-              <br>
-              Studying Theodor Michael's life in our course provides valuable insights into the experiences of 
-              marginalized groups during World War II. It serves as a powerful reminder that racial discrimination 
-              and persecution were not limited to Jews and other targeted populations but extended to individuals 
-              like Michael, who did not fit neatly into any predefined racial category. As a student, I am deeply 
-              moved by his resilience and determination to survive in the face of adversity. His story serves as 
-              a testament to the strength of the human spirit and emphasizes the importance of studying diverse 
-              perspectives when examining historical events such as World War II and the Holocaust.
-              <br>  
-              <br>            
-            <p></p>
-            <button class="collapsible"><b>Sources</b></button>
-            <div class="content">
-              <p class="hangingindent">Michael, Theodor, and Eve Rosenhaft. “Black German.” Black German: An Afro-German Life in the Twentieth Century By Theodor Michael, Liverpool University Press, 2017, pp. 13–206. JSTOR, http://www.jstor.org/stable/j.ctt1ps32m0.4. Accessed 17 Apr. 2023.</p>
-              <br>
-              <p class="hangingindent">The African Courier. "Theodor Michael playing in a Naz-era film " The African Courier, [October 19, 2020], https://www.theafricancourier.de/special/black-people-in-germany/god-saved-theodor-michael-he-survived-nazi-horror/. Accessed 17 Apr. 2023.
-              </p>
-              <br>
-              <p class="hangingindent">The African Courier. "Theodor Michael in an interview shortly before his death " The African Courier, [October 19, 2020], https://www.theafricancourier.de/special/black-people-in-germany/god-saved-theodor-michael-he-survived-nazi-horror/. Accessed 17 Apr. 2023.</p>
-            </div>
-                      
+       
 
 
             </div>

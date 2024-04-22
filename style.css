@@ -15,7 +15,7 @@ body {
 .container_wrapper {
   position: relative;
   margin: 75px auto;
-  max-width: 1150px;
+  max-width: 950px;
   background: rgba(133, 157, 236, 0.3); /* 50% transparency */
   border: 2px solid white;
   border-radius: 20px;
@@ -119,7 +119,7 @@ button {
 }
 
 .modal-content {
-  background-color: #2f363e;
+  background-color: #5e0f53;
   margin: 15% auto;
   padding: 20px;
   border: 1px solid #888;
@@ -210,8 +210,9 @@ button {
 
 .quiz {
   font-family: "Poppins";
+  font-size: large;
   color: white;
-  background: #2f363e;
+  background: rgb(48, 47, 47,0.3);
   padding: 10px;
   border-radius: 6px;
   margin-bottom: 10px;
